@@ -1,0 +1,19 @@
+VERSION = 1,
+
+option APFM_radio.randoChance
+{
+	type = integer, min = 0, max = 100, default = 1,
+	page = APFM_radio, translation = APFM_radio_randoChance, description = APFM_radio_randoChance_description
+}
+
+option APFM_radio.eventChance
+{
+	type = integer, min = 0, max = 100, default = 5,
+	page = APFM_radio, translation = APFM_radio_eventChance, description = APFM_radio_eventChance_description
+}
+
+option APFM_radio.songChance
+{
+	type = integer, min = 0, max = 100, default = 1,
+	page = APFM_radio, translation = APFM_radio_songChance, description = APFM_radio_songChance_description
+}
