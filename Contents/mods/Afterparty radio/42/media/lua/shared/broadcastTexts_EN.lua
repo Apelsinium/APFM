@@ -709,13 +709,584 @@ local broadcastTexts = {
                 }
             },
             late = {
-                late_broadcast1 = {  
-                    {text = "Hello dear listeners!", char = "joshua"},
-                    {text = "Not long ago I established this radio point in the middle of nowhere", char = "joshua"},
+                late_intro_1 = {
+                    {text = "Good evening out there, friends.", char = "joshua"},
+                    {text = "Still here, still broadcasting, still breathing.", char = "joshua"},
+                    {text = "Let’s see what tomorrow’s skies are bringing.", char = "joshua"},
                 },
-                late_broadcast2 = {
-                    {text = "*Sighs*", char = "joshua"},
-                    {text = "I know I'm not the only one out here, so I encourage you guys to get in touch, let's be neighbours!", char = "joshua"},
+                late_intro_2 = {
+                    {text = "Well, folks, looks like we’ve made it through another spin of the clock.", char = "joshua"},
+                    {text = "Let’s check the weather for tomorrow.", char = "joshua"},
+                },
+                late_intro_3 = {
+                    {text = "Evenin’, folks. This is Joshua, still here in my little shack.", char = "joshua"},
+                    {text = "Hope you’re tucked in somewhere safe tonight.", char = "joshua"},
+                    {text = "Let’s take a look at what the sky’s got planned for us.", char = "joshua"},
+                },
+                late_intro_4 = {
+                    {text = "Greetings from my corner of the world to yours.", char = "joshua"},
+                    {text = "Funny how the days blur together now, huh?", char = "joshua"},
+                    {text = "Anyway—let’s see what tomorrow’s looking like.", char = "joshua"},
+                },
+                late_intro_5 = {
+                    {text = "Hey there, all you night owls and candle burners.", char = "joshua"},
+                    {text = "It’s your friend Joshua back on the airwaves.", char = "joshua"},
+                    {text = "Let’s start with the weather, as usual.", char = "joshua"},
+                },
+                late_intro_6 = {
+                    {text = "Another quiet night here at the station.", char = "joshua"},
+                    {text = "Hope you folks are keeping cool in the head and warm in the heart.", char = "joshua"},
+                    {text = "Outside of these two, let’s check that forecast.", char = "joshua"},
+                },
+                late_intro_7 = {
+                    {text = "Some folks meditate, some folks pray.", char = "joshua"},
+                    {text = "Me? I talk into this radio at night and check the weather.", char = "joshua"},
+                    {text = "Let’s see what tomorrow has in store.", char = "joshua"},
+                },
+                late_intro_8 = {
+                    {text = "Hello again, my friends out there in the dark.", char = "joshua"},
+                    {text = "Hope you’re all hunkered down somewhere safe and dry.", char = "joshua"},
+                    {text = "Let’s take a look at tomorrow’s skies.", char = "joshua"},
+                },
+                late_intro_9 = {
+                    {text = "Well, would you look at that? Another day gone by.", char = "joshua"},
+                    {text = "I don’t know about you, but time feels like soup these days.", char = "joshua"},
+                    {text = "Let’s stir in the weather forecast.", char = "joshua"},
+                },
+                late_intro_10 = {
+                    {text = "Hey there, survivors.", char = "joshua"},
+                    {text = "It’s Joshua, still sending out signals from my shack.", char = "joshua"},
+                    {text = "Let’s see what the weather’s cooking up for tomorrow.", char = "joshua"},
+                },
+                late_intro_11 = {
+                    {text = "Evening, friends. It’s just me, the crickets, and this old radio.", char = "joshua"},
+                    {text = "Feels like a routine now, huh?", char = "joshua"},
+                    {text = "Let’s check the skies together.", char = "joshua"},
+                },
+                late_intro_12 = {
+                    {text = "Hope you’re holding steady out there, folks.", char = "joshua"},
+                    {text = "We’ve all got our little corners of the world these days.", char = "joshua"},
+                    {text = "Let’s take a peek at tomorrow’s weather.", char = "joshua"},
+                },
+                late_intro_13 = {
+                    {text = "Good evening, good people.", char = "joshua"},
+                    {text = "Another day in the books, if anyone’s still keeping books.", char = "joshua"},
+                    {text = "Here’s tomorrow’s weather.", char = "joshua"},
+                },
+                late_intro_14 = {
+                    {text = "Joshua here, broadcasting from my humble corner of the universe.", char = "joshua"},
+                    {text = "The sky’s still up there, and I’m still checking it.", char = "joshua"},
+                    {text = "Let’s see what it’s got for us tomorrow.", char = "joshua"},
+                },
+                late_intro_15 = {
+                    {text = "Evening again, friends. Another night, another broadcast.", char = "joshua"},
+                    {text = "I’ll start us off with the usual sky report.", char = "joshua"},
+                },
+                late_intro_16 = {
+                    {text = "Sometimes I wonder if I’m just talking to the trees out here.", char = "joshua"},
+                    {text = "But just in case someone’s listening—let’s check the weather.", char = "joshua"},
+                },
+                late_intro_17 = {
+                    {text = "Night falls again, and so do I—right into my old radio chair.", char = "joshua"},
+                    {text = "Let’s do our ritual, folks: start with the weather.", char = "joshua"},
+                },
+                late_intro_18 = {
+                    {text = "Well, folks, we’re still here.", char = "joshua"},
+                    {text = "And that means it’s time for the nightly weather update.", char = "joshua"},
+                },
+                late_intro_19 = {
+                    {text = "This is Joshua, coming at you from the land of static and cicadas.", char = "joshua"},
+                    {text = "Hope you’re somewhere cozy tonight.", char = "joshua"},
+                    {text = "Let’s see what tomorrow’s bringing.", char = "joshua"},
+                },
+                late_intro_20 = {
+                    {text = "Hello again, my shelter-dwelling friends.", char = "joshua"},
+                    {text = "Time to take a breath, sit back, and hear about tomorrow’s weather.", char = "joshua"},
+                },
+                late_intro_21 = {
+                    {text = "Another day behind us, friends.", char = "joshua"},
+                    {text = "Funny how the quiet starts to feel heavier after a while.", char = "joshua"},
+                    {text = "Let’s see what kind of day tomorrow will bring.", char = "joshua"},
+                },
+                late_intro_22 = {
+                    {text = "Evening, folks. Hope you found something good to eat today.", char = "joshua"},
+                    {text = "If not—well, tomorrow’s another shot.", char = "joshua"},
+                    {text = "Let’s check the weather.", char = "joshua"},
+                },
+                late_intro_23 = {
+                    {text = "The world feels smaller these days, doesn’t it?", char = "joshua"},
+                    {text = "Just you, me, and whatever’s left out there.", char = "joshua"},
+                    {text = "Let’s find out what the sky’s got planned.", char = "joshua"},
+                },
+                late_intro_24 = {
+                    {text = "Some nights I wonder who’s still out there, listening.", char = "joshua"},
+                    {text = "Maybe it’s just me and the static.", char = "joshua"},
+                    {text = "But let’s check tomorrow’s weather anyway.", char = "joshua"},
+                },
+                late_intro_25 = {
+                    {text = "Hope you’re holding up out there, wherever you are.", char = "joshua"},
+                    {text = "It’s strange, getting used to all this silence.", char = "joshua"},
+                    {text = "Let’s break it for a moment with the weather forecast.", char = "joshua"},
+                },
+                late_intro_26 = {
+                    {text = "Good evening, friends—if anyone’s still tuning in.", char = "joshua"},
+                    {text = "Feels like talking to the wind sometimes, but that’s alright.", char = "joshua"},
+                    {text = "Let’s hear from the skies for a change.", char = "joshua"},
+                },
+                late_intro_27 = {
+                    {text = "Used to be you’d hear cars on the highway at night.", char = "joshua"},
+                    {text = "Now it’s just the wind and the hum of this old radio.", char = "joshua"},
+                    {text = "Let’s see what tomorrow’s bringing.", char = "joshua"},
+                },
+                late_intro_28 = {
+                    {text = "Sometimes the hardest part is remembering what day it is.", char = "joshua"},
+                    {text = "But the sky doesn’t forget.", char = "joshua"},
+                    {text = "Let’s check tomorrow’s weather.", char = "joshua"},
+                },
+                late_intro_29 = {
+                    {text = "Evening, folks. Hope you made it through today without too much trouble.", char = "joshua"},
+                    {text = "The quiet gets inside your bones after a while, huh?", char = "joshua"},
+                    {text = "Let’s see if tomorrow’s weather gives us anything new.", char = "joshua"},
+                },
+                late_intro_30 = {
+                    {text = "Hey there, friends.", char = "joshua"},
+                    {text = "Sometimes I miss the sound of distant voices.", char = "joshua"},
+                    {text = "Let’s listen to the sky instead tonight.", char = "joshua"},
+                },
+                late_intro_31 = {
+                    {text = "Funny thing about routines—they keep you sane, even when the world’s gone sideways.", char = "joshua"},
+                    {text = "So here I am again, checking the weather.", char = "joshua"},
+                },
+                late_intro_32 = {
+                    {text = "There’s a kind of peace in the stillness.", char = "joshua"},
+                    {text = "But strangely, peace can get lonely, too.", char = "joshua"},
+                    {text = "Let’s see what tomorrow’s sky looks like.", char = "joshua"},
+                },
+                late_intro_33 = {
+                    {text = "Hope you folks found a little warmth today, one way or another.", char = "joshua"},
+                    {text = "If not, maybe tomorrow will do better.", char = "joshua"},
+                    {text = "Let’s check the forecast.", char = "joshua"},
+                },
+                late_intro_34 = {
+                    {text = "Some nights I just stare at the wall before coming on air.", char = "joshua"},
+                    {text = "But once the mic’s live, I feel a bit more human.", char = "joshua"},
+                    {text = "Let’s check what tomorrow’s bringing.", char = "joshua"},
+                },
+                late_intro_35 = {
+                    {text = "Another spin of Earth around itself, or so I assume.", char = "joshua"},
+                    {text = "Hard to keep track when the clocks don’t matter anymore.", char = "joshua"},
+                    {text = "Let’s hear from the weather instead.", char = "joshua"},
+                },
+                late_intro_36 = {
+                    {text = "I guess you can get used to anything, folks.", char = "joshua"},
+                    {text = "Even the end of the world turns into a routine after a while.", char = "joshua"},
+                    {text = "Let’s check the weather for tomorrow.", char = "joshua"},
+                },
+                late_intro_37 = {
+                    {text = "Evening, friends. Hope you’ve found somewhere dry and safe tonight.", char = "joshua"},
+                    {text = "If not—well, maybe tomorrow will be kinder.", char = "joshua"},
+                    {text = "Let’s check what the sky’s planning.", char = "joshua"},
+                },
+                late_intro_38 = {
+                    {text = "I sometimes wonder if the birds miss us.", char = "joshua"},
+                    {text = "Seems like they’re louder now. Maybe they’re just filling the gap.", char = "joshua"},
+                    {text = "Let’s see what kind of day they’ll have tomorrow.", char = "joshua"},
+                },
+                late_intro_39 = {
+                    {text = "Another night falls, another broadcast starts.", char = "joshua"},
+                    {text = "Feels like I’ve done this a thousand times already.", char = "joshua"},
+                    {text = "Let’s see what the weather’s got to say.", char = "joshua"},
+                },
+                late_intro_40 = {
+                    {text = "Hey folks. The world’s still quiet out there.", char = "joshua"},
+                    {text = "But at least the sky keeps moving.", char = "joshua"},
+                    {text = "Let’s check tomorrow’s forecast.", char = "joshua"},
+                },
+                late_intro_41 = {
+                    {text = "Evenin’, folks. You ever think about how weird it is that the stars are still out there?", char = "joshua"},
+                    {text = "Same old constellations, same old sky—like nothin’ happened.", char = "joshua"},
+                    {text = "Let’s see what tomorrow’s weather’s doing beneath ‘em.", char = "joshua"},
+                },
+                late_intro_42 = {
+                    {text = "I’ve been talking to the radio static again.", char = "joshua"},
+                    {text = "It answers back sometimes, but not in words.", char = "joshua"},
+                    {text = "Let’s hear what the sky’s whispering for tomorrow.", char = "joshua"},
+                },
+                late_intro_43 = {
+                    {text = "Folks, time doesn’t really exist anymore.", char = "joshua"},
+                    {text = "It’s just sunrise, sunset, and whatever happens in between.", char = "joshua"},
+                    {text = "Speaking of which, let’s check the weather.", char = "joshua"},
+                },
+                late_intro_44 = {
+                    {text = "I had a dream last night that the moon was a big eye, just watching us.", char = "joshua"},
+                    {text = "Didn’t seem to mind what it saw, though.", char = "joshua"},
+                    {text = "Let’s see what tomorrow’s sky has in store.", char = "joshua"},
+                },
+                late_intro_45 = {
+                    {text = "Sometimes I think the weather talks back.", char = "joshua"},
+                    {text = "You just gotta listen between the raindrops.", char = "joshua"},
+                    {text = "Let’s check what it’s saying tonight.", char = "joshua"},
+                },
+                late_intro_46 = {
+                    {text = "Good evening, all you cosmic wanderers.", char = "joshua"},
+                    {text = "We’re still spinning through space, apocalypse or not.", char = "joshua"},
+                    {text = "Let’s see if tomorrow comes with sunshine or weirdness.", char = "joshua"},
+                },
+                late_intro_47 = {
+                    {text = "I brewed some pine needle tea tonight and stared at the ceiling.", char = "joshua"},
+                    {text = "Thought I saw it breathing. Might’ve just been the wind.", char = "joshua"},
+                    {text = "Let’s check the weather before the ceiling starts talking again.", char = "joshua"},
+                },
+                late_intro_48 = {
+                    {text = "You ever think about how clouds are just sky-ghosts?", char = "joshua"},
+                    {text = "Floating around up there, shapeshifting all day long.", char = "joshua"},
+                    {text = "Let’s see what the ghosts are planning for tomorrow.", char = "joshua"},
+                },
+                late_intro_49 = {
+                    {text = "I put a quartz crystal on top of my radio set today.", char = "joshua"},
+                    {text = "Not sure if it does anything, but hey—can’t hurt, right?", char = "joshua"},
+                    {text = "Let’s see what tomorrow’s vibrations are like.", char = "joshua"},
+                },
+                late_intro_50 = {
+                    {text = "I counted cicada chirps for an hour tonight.", char = "joshua"},
+                    {text = "Pretty sure they’re doing math we don’t understand.", char = "joshua"},
+                    {text = "Anyway, let’s check the weather.", char = "joshua"},
+                },
+                late_intro_51 = {
+                    {text = "Folks, the universe is weird. But then again, so are we.", char = "joshua"},
+                    {text = "Let’s embrace the strangeness and check tomorrow’s sky.", char = "joshua"},
+                },
+                late_intro_52 = {
+                    {text = "Sometimes I light a candle just to pretend it’s a campfire.", char = "joshua"},
+                    {text = "Talk to it like it’s an old friend.", char = "joshua"},
+                    {text = "Let’s see what tomorrow’s flames are doing up in the sky.", char = "joshua"},
+                },
+                late_intro_53 = {
+                    {text = "Had a talk with a raccoon last night.", char = "joshua"},
+                    {text = "Didn’t say much, but he listened real polite-like.", char = "joshua"},
+                    {text = "Let’s check tomorrow’s forecast. Maybe the raccoon is up to something.", char = "joshua"},
+                },
+                late_intro_54 = {
+                    {text = "Sometimes I think the trees remember everything.", char = "joshua"},
+                    {text = "They’ve seen a lot more apocalypses than we have.", char = "joshua"},
+                    {text = "Let’s find out what the weather’s writing into their rings tomorrow.", char = "joshua"},
+                },
+                late_intro_55 = {
+                    {text = "Ever just sit still and listen to your own heartbeat?", char = "joshua"},
+                    {text = "Feels like the earth’s got one too, if you’re quiet enough.", char = "joshua"},
+                    {text = "Let’s check the weather while the rhythm’s still going.", char = "joshua"},
+                },
+                late_intro_56 = {
+                    {text = "I found an old lava lamp in my shack today.", char = "joshua"},
+                    {text = "Plugged it in. Still works. The universe in a bottle, folks.", char = "joshua"},
+                    {text = "Let’s see what tomorrow’s cosmic goo is doing in the sky.", char = "joshua"},
+                },
+                late_intro_57 = {
+                    {text = "Some folks used to read tea leaves for answers.", char = "joshua"},
+                    {text = "I just read the clouds. Less clean-up afterward.", char = "joshua"},
+                    {text = "Let’s see what they’re saying tonight.", char = "joshua"},
+                },
+                late_intro_58 = {
+                    {text = "I like to think the stars are little campfires in the sky.", char = "joshua"},
+                    {text = "Somebody else out there, roasting marshmallows beyond the void.", char = "joshua"},
+                    {text = "Let’s check what the heavens are cooking up tomorrow.", char = "joshua"},
+                },
+                late_intro_59 = {
+                    {text = "I tried meditating today but ended up napping.", char = "joshua"},
+                    {text = "Maybe that’s enlightenment, maybe that’s just old age.", char = "joshua"},
+                    {text = "Let’s check the weather while I’m still awake.", char = "joshua"},
+                },
+                late_intro_60 = {
+                    {text = "Hey there, folks.", char = "joshua"},
+                    {text = "If the universe is listening, I’d like to order one gentle day tomorrow.", char = "joshua"},
+                    {text = "Let’s see if the sky took my request.", char = "joshua"},
+                },
+                late_intro_61 = {
+                    {text = "Evenin’, folks. You ever think about aliens?", char = "joshua"},
+                    {text = "If they’re out there, I bet they’re watching us like a weird TV show.", char = "joshua"},
+                    {text = "Let’s see what tomorrow’s weather has for the next episode.", char = "joshua"},
+                },
+                late_intro_62 = {
+                    {text = "Sometimes I wonder if the aliens just said, 'Nope,' and skipped town.", char = "joshua"},
+                    {text = "Can’t blame ‘em, really.", char = "joshua"},
+                    {text = "Let’s check the skies anyway, just in case they come back.", char = "joshua"},
+                },
+                late_intro_63 = {
+                    {text = "If you’re listening out there, folks—from Earth or beyond—good evening.", char = "joshua"},
+                    {text = "Let’s check tomorrow’s forecast for all lifeforms, terrestrial or otherwise.", char = "joshua"},
+                },
+                late_intro_64 = {
+                    {text = "Had a dream last night about flying saucers landing in my backyard.", char = "joshua"},
+                    {text = "Told 'em to grab a seat and listen to the weather report.", char = "joshua"},
+                    {text = "So let’s do that now.", char = "joshua"},
+                },
+                late_intro_65 = {
+                    {text = "Folks, if the aliens are watching, I hope they like radio.", char = "joshua"},
+                    {text = "We’re one of a few shows left in town.", char = "joshua"},
+                    {text = "Let’s check the sky for UFO traffic and clouds.", char = "joshua"},
+                },
+                late_intro_66 = {
+                    {text = "Used to be folks would watch the skies for flying saucers.", char = "joshua"},
+                    {text = "Now we’re just watching for rain or sun.", char = "joshua"},
+                    {text = "Let’s see which one’s coming tomorrow.", char = "joshua"},
+                },
+                late_intro_67 = {
+                    {text = "Some nights I swear I see lights that ain’t stars.", char = "joshua"},
+                    {text = "Could be satellites. Could be something stranger.", char = "joshua"},
+                    {text = "Either way, let’s check the weather.", char = "joshua"},
+                },
+                late_intro_68 = {
+                    {text = "If the universe is full of life, I hope they’re kinder than we were.", char = "joshua"},
+                    {text = "Maybe they’ll send us some better weather too.", char = "joshua"},
+                    {text = "Let’s see what tomorrow’s forecast says.", char = "joshua"},
+                },
+                late_intro_69 = {
+                    {text = "I once met a guy who swore he got abducted by aliens.", char = "joshua"},
+                    {text = "Said they were polite. Just wanted to look around his brain.", char = "joshua"},
+                    {text = "Anyway, let’s check the weather for us ground folks.", char = "joshua"},
+                },
+                late_intro_70 = {
+                    {text = "I leave a little welcome message for the UFOs on my roof sometimes.", char = "joshua"},
+                    {text = "Just in case they’re tuning in on a cosmic frequency.", char = "joshua"},
+                    {text = "Let’s check what the Earth’s weather’s doing tomorrow.", char = "joshua"},
+                },
+                late_intro_71 = {
+                    {text = "Good evening, Earthlings and anyone else who’s listening.", char = "joshua"},
+                    {text = "It’s your friendly neighborhood radio signal again.", char = "joshua"},
+                    {text = "Let’s check the weather—local and galactic.", char = "joshua"},
+                },
+                late_intro_72 = {
+                    {text = "Used to be we worried about invasions from space.", char = "joshua"},
+                    {text = "Now it’s just us and the weather, folks.", char = "joshua"},
+                    {text = "Let’s see what tomorrow’s sky looks like.", char = "joshua"},
+                },
+                late_intro_73 = {
+                    {text = "I don’t know if we’re alone in the universe.", char = "joshua"},
+                    {text = "But if anyone’s listening, hey—hope you’re staying dry out there.", char = "joshua"},
+                    {text = "Let’s check the weather for tomorrow.", char = "joshua"},
+                },
+                late_intro_74 = {
+                    {text = "Some people used to make crop circles. Now we just make gardens.", char = "joshua"},
+                    {text = "Hope the aliens appreciate the switch.", char = "joshua"},
+                    {text = "Let’s check tomorrow’s forecast.", char = "joshua"},
+                },
+                late_intro_75 = {
+                    {text = "I figure if the mothership ever lands, they better bring snacks.", char = "joshua"},
+                    {text = "And maybe fix the weather while they’re at it.", char = "joshua"},
+                    {text = "Let’s see what the sky’s cooking for tomorrow.", char = "joshua"},
+                },
+                late_intro_76 = {
+                    {text = "You ever stare at the stars so long you forget where you are?", char = "joshua"},
+                    {text = "Happens to me more often these days.", char = "joshua"},
+                    {text = "Let’s check the forecast while we’re still on Earth.", char = "joshua"},
+                },
+                late_intro_77 = {
+                    {text = "I once read a book that said aliens don’t visit because we’re too weird.", char = "joshua"},
+                    {text = "Guess they’re not wrong.", char = "joshua"},
+                    {text = "Let’s check the weather anyway.", char = "joshua"},
+                },
+                late_intro_78 = {
+                    {text = "Sometimes I wonder if we’re the aliens.", char = "joshua"},
+                    {text = "Dropped here long ago and just forgot.", char = "joshua"},
+                    {text = "Well, let’s check the Earth weather, alien or not.", char = "joshua"},
+                },
+                late_intro_79 = {
+                    {text = "I send these broadcasts out into space, you know.", char = "joshua"},
+                    {text = "Who knows who’s picking ‘em up.", char = "joshua"},
+                    {text = "Let’s check the weather for tomorrow, just in case they’re curious.", char = "joshua"},
+                },
+                late_intro_80 = {
+                    {text = "If you’re an alien listening to this, welcome to Kentucky.", char = "joshua"},
+                    {text = "Bring a raincoat and maybe some bug spray.", char = "joshua"},
+                    {text = "Let’s see what tomorrow’s weather’s doing.", char = "joshua"},
+                },
+                late_intro_81 = {
+                    {text = "Evenin’, folks. Sometimes I wonder if I’m still here.", char = "joshua"},
+                    {text = "Or maybe I’m just a voice bouncing around the airwaves.", char = "joshua"},
+                    {text = "Either way, let’s check tomorrow’s weather.", char = "joshua"},
+                },
+                late_intro_82 = {
+                    {text = "You ever get the feeling you’re just a sound, not a person?", char = "joshua"},
+                    {text = "Happens to me sometimes, sitting here with this mic.", char = "joshua"},
+                    {text = "Let’s check what tomorrow’s sky is doing, real or not.", char = "joshua"},
+                },
+                late_intro_83 = {
+                    {text = "Sometimes I think I’m just a loop, folks.", char = "joshua"},
+                    {text = "Same shack, same radio, same weather report.", char = "joshua"},
+                    {text = "Well, let’s spin the wheel again—here comes the weather.", char = "joshua"},
+                },
+                late_intro_84 = {
+                    {text = "I was thinking today—what if I’m just part of someone else’s dream?", char = "joshua"},
+                    {text = "A friendly voice in the background, you know?", char = "joshua"},
+                    {text = "Let’s see what kind of dream the weather’s having tomorrow.", char = "joshua"},
+                },
+                late_intro_85 = {
+                    {text = "Some days I feel like I’m not in the world anymore.", char = "joshua"},
+                    {text = "Just floating somewhere between static and silence.", char = "joshua"},
+                    {text = "Let’s check the weather for the folks who are still grounded.", char = "joshua"},
+                },
+                late_intro_86 = {
+                    {text = "Ever get the feeling you’re just a radio broadcast in somebody’s basement?", char = "joshua"},
+                    {text = "Or is that just me?", char = "joshua"},
+                    {text = "Anyway, let’s check the skies.", char = "joshua"},
+                },
+                late_intro_87 = {
+                    {text = "Hello again, whoever’s out there.", char = "joshua"},
+                    {text = "Sometimes I wonder if I’m just part of the background now.", char = "joshua"},
+                    {text = "But hey—backgrounds need weather too.", char = "joshua"},
+                },
+                late_intro_88 = {
+                    {text = "Some nights I sit here wondering if I’m even real anymore.", char = "joshua"},
+                    {text = "Maybe I’m just the old man voice in someone’s head.", char = "joshua"},
+                    {text = "Let’s check the weather for whatever reality this is.", char = "joshua"},
+                },
+                late_intro_89 = {
+                    {text = "Funny thing about being alone this long—you start to feel like a ghost.", char = "joshua"},
+                    {text = "Maybe I am one, just stuck in this radio loop.", char = "joshua"},
+                    {text = "Well, ghost or not, let’s check the forecast.", char = "joshua"},
+                },
+                late_intro_90 = {
+                    {text = "Hey there, friends—if I’m still allowed to call you that.", char = "joshua"},
+                    {text = "Sometimes I feel like I’m just code in a machine somewhere.", char = "joshua"},
+                    {text = "Let’s check the weather for all simulations and survivors alike.", char = "joshua"},
+                },
+                late_intro_91 = {
+                    {text = "Evening, folks. You ever feel like you’re stuck in a loop?", char = "joshua"},
+                    {text = "Same day, same night, same weather report.", char = "joshua"},
+                    {text = "Well, let’s do the ritual—here comes the forecast.", char = "joshua"},
+                },
+                late_intro_92 = {
+                    {text = "Sometimes I wonder if I’m just noise in a radio play somewhere.", char = "joshua"},
+                    {text = "A friendly ghost voice in the background, keeping folks company.", char = "joshua"},
+                    {text = "Let’s check tomorrow’s weather, just in case this is real.", char = "joshua"},
+                },
+                late_intro_93 = {
+                    {text = "They say if you talk to yourself too long, you disappear.", char = "joshua"},
+                    {text = "I guess that makes me halfway gone by now.", char = "joshua"},
+                    {text = "Let’s check the weather while there’s still someone listening.", char = "joshua"},
+                },
+                late_intro_94 = {
+                    {text = "You ever wonder if the world out there is just waiting for you to stop talking?", char = "joshua"},
+                    {text = "Well, I’m not stopping yet.", char = "joshua"},
+                    {text = "Let’s check the weather, like always.", char = "joshua"},
+                },
+                late_intro_95 = {
+                    {text = "I’ve been staring at this microphone so long it feels like part of me.", char = "joshua"},
+                    {text = "Maybe I’m not a person anymore—just a weather machine.", char = "joshua"},
+                    {text = "Speaking of, here comes the forecast.", char = "joshua"},
+                },
+                late_intro_96 = {
+                    {text = "Some days I feel like a tape recorder stuck on repeat.", char = "joshua"},
+                    {text = "But hey—might as well press play on the weather again.", char = "joshua"},
+                },
+                late_intro_97 = {
+                    {text = "If anyone out there is dreaming this—I hope it’s a nice dream.", char = "joshua"},
+                    {text = "Or at least a weird one.", char = "joshua"},
+                    {text = "Let’s check the weather inside this dream world.", char = "joshua"},
+                },
+                late_intro_98 = {
+                    {text = "I’ve been thinking—what if this is all just a story someone left running?", char = "joshua"},
+                    {text = "Guess I’m the narrator, huh?", char = "joshua"},
+                    {text = "Let’s check the weather chapter for tomorrow.", char = "joshua"},
+                },
+                late_intro_99 = {
+                    {text = "Sometimes I close my eyes and imagine I’m just sound waves.", char = "joshua"},
+                    {text = "Bouncing off the hills, looping through the static.", char = "joshua"},
+                    {text = "Let’s see what the wind’s bringing tomorrow.", char = "joshua"},
+                },
+                late_intro_100 = {
+                    {text = "Hey there, folks. Or maybe it’s just me talking to me again.", char = "joshua"},
+                    {text = "Either way, let’s keep the ritual going.", char = "joshua"},
+                    {text = "Here comes the weather.", char = "joshua"},
+                },
+                late_intro_twinpeaks = {
+                    {text = "Alright folks. It may sound weird, but...", char = "joshua"},
+                    {text = "Raccoons are not what they seem.", char = "joshua"},
+                    {text = "But we can do anything about it. Let's worry about the weather.", char = "joshua"},
+                },
+                late_intro_nightvale = {
+                    {text = "Guns don't kill people. People kill guns", char = "joshua"},
+                    {text = "And so does the weather", char = "joshua"},
+                },
+                late_intro_101 = {
+                    {text = "Evening, friends. The night’s settled in soft and quiet.", char = "joshua"},
+                    {text = "Let’s check what kind of day tomorrow’s bringing.", char = "joshua"},
+                },
+                late_intro_102 = {
+                    {text = "The crickets are singing tonight, same as always.", char = "joshua"},
+                    {text = "Let’s hear what the skies have to say about tomorrow.", char = "joshua"},
+                },
+                late_intro_103 = {
+                    {text = "Hey there, folks. Hope you’ve found your corner of calm tonight.", char = "joshua"},
+                    {text = "Let’s see what tomorrow’s looking like.", char = "joshua"},
+                },
+                late_intro_104 = {
+                    {text = "Sometimes you’ve just gotta breathe, folks.", char = "joshua"},
+                    {text = "One breath at a time, one day at a time.", char = "joshua"},
+                    {text = "Let’s check tomorrow’s weather.", char = "joshua"},
+                },
+                late_intro_105 = {
+                    {text = "The wind’s gentle tonight, brushing through the trees.", char = "joshua"},
+                    {text = "Let’s see if tomorrow’s sky will be just as kind.", char = "joshua"},
+                },
+                late_intro_106 = {
+                    {text = "Hello out there, friends. I hope you’re safe and warm.", char = "joshua"},
+                    {text = "Let’s check the weather for tomorrow, see if it stays that way.", char = "joshua"},
+                },
+                late_intro_107 = {
+                    {text = "Another quiet night, another quiet broadcast.", char = "joshua"},
+                    {text = "Let’s take a moment and check tomorrow’s weather together.", char = "joshua"},
+                },
+                late_intro_108 = {
+                    {text = "Evening again, folks. The world’s still turning.", char = "joshua"},
+                    {text = "Let’s see what tomorrow’s sky has in store.", char = "joshua"},
+                },
+                late_intro_109 = {
+                    {text = "There’s something peaceful about knowing the sun will rise again.", char = "joshua"},
+                    {text = "Let’s see what kind of day it’ll bring with it.", char = "joshua"},
+                },
+                late_intro_110 = {
+                    {text = "The night air’s cool, the shack is quiet, and the radio’s humming just right.", char = "joshua"},
+                    {text = "Let’s check the forecast, friends.", char = "joshua"},
+                },
+                late_intro_111 = {
+                    {text = "Evenin’, friends. Hope your shelter feels like home tonight.", char = "joshua"},
+                    {text = "Let’s take a look at tomorrow’s skies.", char = "joshua"},
+                },
+                late_intro_112 = {
+                    {text = "Sometimes silence is just fine, you know?", char = "joshua"},
+                    {text = "But I’ll break it for a moment to bring you the weather.", char = "joshua"},
+                },
+                late_intro_113 = {
+                    {text = "Another night, another peaceful check-in from me to you.", char = "joshua"},
+                    {text = "Let’s see what the clouds and winds are planning for tomorrow.", char = "joshua"},
+                },
+                late_intro_114 = {
+                    {text = "Hey there, survivors.", char = "joshua"},
+                    {text = "Let’s take a quiet moment to think about tomorrow’s weather.", char = "joshua"},
+                },
+                late_intro_115 = {
+                    {text = "Sometimes I sit here and listen to the world breathe.", char = "joshua"},
+                    {text = "Let’s see how the sky’s breathing tomorrow.", char = "joshua"},
+                },
+                late_intro_116 = {
+                    {text = "Evenin’, folks. The world’s softer at night, don’t you think?", char = "joshua"},
+                    {text = "Let’s check the weather for the next sunrise.", char = "joshua"},
+                },
+                late_intro_117 = {
+                    {text = "Hope you had a quiet day, friends.", char = "joshua"},
+                    {text = "Let’s check what kind of quiet tomorrow will bring.", char = "joshua"},
+                },
+                late_intro_118 = {
+                    {text = "The shack’s warm, the lamp’s low, and it’s time for the weather.", char = "joshua"},
+                },
+                late_intro_119 = {
+                    {text = "I like these calm nights. Makes me feel human again.", char = "joshua"},
+                    {text = "Let’s check if tomorrow will be just as calm.", char = "joshua"},
+                },
+                late_intro_120 = {
+                    {text = "Evenin’, all you quiet souls out there.", char = "joshua"},
+                    {text = "Let’s check tomorrow’s sky together.", char = "joshua"},
                 }
             }
         },
@@ -1579,7 +2150,7 @@ local broadcastTexts = {
                 }
             },
             late = {
-                
+                "Did you know there is a faceless woman who secretely lives in your home? It's true. She's there now. She's always there, just out of your sight"
             },
         },
         outro = {
